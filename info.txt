@@ -1,0 +1,44 @@
+==== github===
+Download gitbash from https://gitforwindows.org/
+install into your system
+go to your own folder -> right click->git bash option will come
+git clone https://github.com/JigneshPansuriaDeveloper/React_April.git
+
+go to inside foler and run
+1) npm install
+2) npm start
+
+
+============
+
+
+
+//Component
+
+1)Functional component(function)
+
+
+-> light weight
+-> presentation data
+-> can handle only props
+-> less functionality
+
+
+
+2)classbased component (class)
+-> heavey in weight because we are creating class
+-> memory consumption is more
+-> lots of functionality can be handle
+-> It supports state and props
+
+
+
+function A   	->		function	B
+state	Props		state
+
+
+Difference between state and props
+1) Props is used for communicating between two components
+1) state is used for same component only
+
+		

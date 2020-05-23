@@ -1,0 +1,9 @@
+(A) First app
+1) lower case or upper case typing result should display
+2) by removing character one by one , list should display
+3) title or other key from db.json should filter
+
+(B)
+1) constuct dummy json for country,contact,company
+2)list html table data like company,country,contact with search box
+
