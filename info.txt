@@ -41,4 +41,16 @@ Difference between state and props
 1) Props is used for communicating between two components
 1) state is used for same component only
 
-		
+
+// Lifecycle methods in Class based component
+
+initialization
+rendering 
+unmounting 
+
+componentwillmount()
+componentwillupdate()
+compoenentDidMount()
+componentDidUpdate();
+shouldComponentUpdate()
+componentwillUnmount();
