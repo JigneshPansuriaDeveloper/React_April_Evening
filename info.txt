@@ -54,3 +54,10 @@ compoenentDidMount()
 componentDidUpdate();
 shouldComponentUpdate()
 componentwillUnmount();
+
+
+// How to create a fake api
+
+step 1: install json server
+		npm install -g json-server
+Step 2 :json-server --watch db.json --port 8900
