@@ -6,11 +6,13 @@ const listArtist=({artistData})=>{
     if(artistData){
         return artistData.map((item)=>{
             const style={
-                background:`url{'/images/covers/${item.cover}.jpg'}`
+                background:`url('/images/covers/${item.cover}.jpg')`
             }
             console.log('style',style)
             return(
-                <Link to={`/artist/${item.id}`} className="artist_item" key={item.id} style={style} >
+                <Link to={`/artist/${item.id}`}
+                 className="artist_item"
+                  key={item.id} style={style} >
                 <div >
                     {item.name}
                 </div>
