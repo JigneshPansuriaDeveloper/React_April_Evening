@@ -61,3 +61,34 @@ componentwillUnmount();
 step 1: install json server
 		npm install -g json-server
 Step 2 :json-server --watch db.json --port 8900
+
+
+
+======================= Redux ===================
+Redux is nothing but the state management library
+
+Redux works on this three principles
+
+1) Single source of truth ->global state in your app
+2) state is read only or unmutatable(not change)
+2)  changes are made with pure functions(reducer)
+
+Reducer has two things -> state,	
+
+Redux is isolated means it can use with any framework like angular,vue,React or vanila JS
+
+
+React redux has two methods
+1)mapDispatchToProps
+2) mapStateToProps
+
+
+Node ->redux => installation steps
+
+1) npm init
+2) npm install redux
+
+
+React redux
+1) install basic react app
+2) install redux react-redux
