@@ -1,17 +1,30 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.css'
 import {connect} from 'react-redux';
 class App extends Component {
   
   render() {
     return (
       <div>
+        <div>
         <center>
           <p>{this.props.count}</p>
           <button onClick={this.props.add}>Increment</button>
           <button onClick={this.props.sub}>Decrement</button>
         </center>
+        </div>
+        <hr/>
+        <div>History</div>
+        <div>
+          <ul>
+      {
+      this.props.history.map(el=>(
+      <li className="historyItem" key={el.id}>{el.count}</li>
+      ))
+      }
+          </ul>
+        </div>
       </div>
     )
   }
@@ -30,7 +43,8 @@ const mapDispatchToProps=dispatch=>{
 const mapStateToProps=state=>{
   console.log('state',state.count)
   return{
-    count:state.count
+    count:state.count,
+    history:state.history
   }
 }
 export default connect(mapStateToProps,mapDispatchToProps)(App);
