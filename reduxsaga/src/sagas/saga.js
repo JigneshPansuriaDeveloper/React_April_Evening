@@ -1,5 +1,5 @@
 
-import {takeEvery,put,delay} from "redux-saga/effects";
+import {takeLatest,put,delay} from "redux-saga/effects";
 
 
 function* ageUpAsync(){
@@ -8,5 +8,5 @@ function* ageUpAsync(){
 }
 
 export function* watchAgeUp(){
-    yield takeEvery("AGE_UP",ageUpAsync)
+    yield takeLatest("AGE_UP",ageUpAsync)
 }
