@@ -69,6 +69,8 @@ Redux is nothing but the state management library
 
 Redux works on this three principles
 
+Redux follows unidirectional flow
+
 1) Single source of truth ->global state in your app
 2) state is read only or unmutatable(not change)
 2)  changes are made with pure functions(reducer)
@@ -92,3 +94,25 @@ Node ->redux => installation steps
 React redux
 1) install basic react app
 2) install redux react-redux
+
+
+
+// Middleware
+
+-- when we dispatch any action it directly update in redux store
+so if api failure happens then it will represent wrong data in dom so to achive failure case
+we have to use middleware.
+
+Middlewae is nothing but the function which we create once wrapper before sending /dispatch
+to redux store.
+
+
+Type of Middlewae
+1)Thunk middleware
+2) Saga middleware
+
+1) Thunk middles -
+install -> npm install redux-thunk
+
+npm redux react-redux redux-thunk
+

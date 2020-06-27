@@ -1,8 +1,27 @@
-export const ageUp=val=>{
-    console.log('action called')
+
+export const loading=()=>{
+    return{
+        type:'Loading'
+    }
+}
+
+export const ageUpAsync=val=>{
     return{
         type:'AGE_UP',
         value:val
+    }
+ }
+ 
+
+
+
+export const ageUp=val=>{
+    return dispach=>{
+        dispach(loading());
+        setTimeout(()=>{
+            dispach(ageUpAsync(val))
+        },5000);
+        
     }
 }
 
